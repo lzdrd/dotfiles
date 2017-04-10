@@ -1,0 +1,86 @@
+!  ██     ██      ██           ████                    ██   ██          
+! ░░██   ██      ░██          ░██░                    ░██  ░██          
+!  ░░██ ██       ░██  █████  ██████  ██████   ██   ██ ░██ ██████  ██████
+!   ░░███     ██████ ██░░░██░░░██░  ░░░░░░██ ░██  ░██ ░██░░░██░  ██░░░░ 
+!    ██░██   ██░░░██░███████  ░██    ███████ ░██  ░██ ░██  ░██  ░░█████ 
+!   ██ ░░██ ░██  ░██░██░░░░   ░██   ██░░░░██ ░██  ░██ ░██  ░██   ░░░░░██
+!  ██   ░░██░░██████░░██████  ░██  ░░████████░░██████ ███  ░░██  ██████ 
+! ░░     ░░  ░░░░░░  ░░░░░░   ░░    ░░░░░░░░  ░░░░░░ ░░░    ░░  ░░░░░░  
+!
+!  ▓▓▓▓▓▓▓▓▓▓
+! ░▓ author ▓ xero <x@xero.nu>
+! ░▓ code   ▓ http://code.xero.nu/dotfiles
+! ░▓ mirror ▓ http://git.io/.files
+! ░▓▓▓▓▓▓▓▓▓▓
+! ░░░░░░░░░░
+!
+! █▓▒░ fonts
+!URxvt.perl-ext-common: default,matcher
+!URxvt.font: xft:Terminus:pixelsize=12:bold
+!URxvt.boldFont: xft:Terminus:pixelsize=12:regular
+!URxvt.italicFont: xft:Terminus:pixelsize=12:Italic
+!URxvt.boldItalicFont: xft::pixelsize=12:Bold:Italic
+
+URxvt.letterSpace: -1
+URxvt.font: xft:Droid Sans Mono:size=10:regular
+URxvt.boldFont: xft:Droid Sans Mono:size=10:bold
+!URxvt.font: xft:Terminus:pixelsize=14:regular
+!URxvt.boldFont: xft:Terminus:pixelsize=14:bold
+
+! special
+*.foreground:   #ffffff
+*.background:   #222222
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #222827
+*.color8:       #5d6f74
+
+! red
+*.color1:       #d5a8e3
+*.color9:       #cd749c
+
+! green
+*.color2:       #9c75dd
+*.color10:      #63b0b0
+
+! yellow
+*.color3:       #9898ae
+*.color11:      #c0c0dd
+
+! blue
+*.color4:       #654a96
+*.color12:      #5786bc
+
+! magenta
+*.color5:       #625566
+*.color13:      #3f3442
+
+! cyan
+*.color6:       #a9d1df
+*.color14:      #849da2
+
+! white
+*.color7:       #e6ebe5
+*.color15:      #d9d6cf
+
+!URxvt*transparent: true
+!URxvt*shading: 100
+
+! █▓▒░ clipboard
+urxvt.perl-ext-common: default,clipboard,keyboard-select
+urxvt.keysym.M-Escape: perl:keyboard-select:activate
+urxvt.keysym.M-c:   perl:clipboard:copy
+urxvt.keysym.C-v:   perl:clipboard:paste
+urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+urxvt.clipboard.copycmd:  xsel -ib
+urxvt.clipboard.pastecmd: xsel -ob
+
+! █▓▒░ misc
+!urxvt.saveLines: 4095
+!urxvt.iso14755: false
+!URxvt*altSendsEscape: true
+!URxvt*externalBorder: 2
+URxvt*internalBorder: 5
+URxvt*borderLess: false
+URxvt*scrollBar: false
